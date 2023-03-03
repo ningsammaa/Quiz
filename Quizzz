@@ -1,0 +1,211 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main() 
+{
+    int score = 0;
+    
+    printf("Welcome to the C Programming Quiz!\n");
+    printf("Answer each question with a single character (a, b, c, or d).\n\n");
+    
+
+    // Question 1
+    printf("Q1: What does 'printf' do?\n");
+    printf("a) Reads input from the user\n");
+    printf("b) Outputs text to the console\n");
+    printf("c) Calculates a mathematical expression\n");
+    printf("d) None of the above\n");
+    char answer1;
+    scanf(" %c", &answer1);
+    if (answer1 == 'b')
+     {
+        printf("Correct!\n");
+        score++;
+    }
+     else 
+    {
+        printf("Incorrect. The correct answer is b.\n");
+    }
+    
+
+    // Question 2
+    printf("Q2: What does PDF stand for?\n");
+    printf("a) Perosnal Document Format \n");
+    printf("b) Public Document Format \n");
+    printf("c) Portable Document Format \n");
+    printf("d) Printable Document Format \n");
+    char answer2;
+    scanf(" %c", &answer2);
+    if (answer2 == 'c')
+     {
+        printf("Correct!\n");
+        score++;
+    } 
+    else 
+    {
+        printf("Incorrect. The correct answer is c\n");
+    }
+    
+
+    // Question 3
+    printf("Q3: What is the correct syntax for declaring a variable named 'x' of type 'int'?\n");
+    printf("a) int x;\n");
+    printf("b) x = int;\n");
+    printf("c) int x = int;\n");
+    printf("d) int = x;\n");
+    char answer3;
+    scanf(" %c", &answer3);
+    if (answer3 == 'a') 
+    {
+        printf("Correct!\n");
+        score++;
+    } 
+    else 
+    {
+        printf("Incorrect. The correct answer is a.\n");
+    }
+    
+
+    // Question 4
+    printf("Q4: Which computer is considered to be the first programmable computer?\n");
+    printf("a) ENIAC\n");
+    printf("b) UNIVAC\n");
+    printf("c) Colossus \n");
+    printf("d) Analytical Engine\n");
+    char answer4;
+    scanf(" %c", &answer4);
+    if (answer4 == 'd') 
+    {
+        printf("Correct!\n");
+        score++;
+    } 
+    else 
+    {
+        printf("Incorrect. The correct answer is d.\n");
+    }
+    
+
+    // Question 5
+    printf("Q5: What is the correct way to declare a constant named 'PI' with a value of 3.14159?\n");
+    printf("a) #define PI = 3.14159\n");
+    printf("b) const PI = 3.14159\n");
+    printf("c) #define PI 3.14159\n");
+    printf("d) const float PI = 3.14159\n");
+    char answer5;
+    scanf(" %c", &answer5);
+    if (answer5 == 'd') 
+    {
+        printf("Correct!\n");
+        score++;
+    } 
+    else
+     {
+        printf("Incorrect. The correct answer is d.\n");
+    }
+    
+
+    // Question 6
+    printf("Q6: What is the output of the following code snippet?\n");
+    printf("int x = 5;\n");
+    printf("printf(\"%d\", ++x);\n");
+    printf("a) 4\n");
+    printf("b) 5\n");
+    printf("c) 6\n");
+ printf("d) Undefined\n");
+ char answer6;
+ scanf(" %c", &answer6);
+ if (answer6 == 'c') 
+ {
+ printf("Correct!\n");
+ score++;
+ } 
+ else
+  {
+    printf("Incorrect. The correct answer is c.\n");
+}
+
+
+// Question 7
+printf("Q7: What is the full from of USB?\n");
+printf("a) Ultra Serial Bus\n");
+printf("b) Universal Serial Bus\n");
+printf("c) Unique Sequence Bus\n");
+printf("d) Ultrafast Serial Bus\n");
+char answer7;
+scanf(" %c", &answer7);
+if (answer7 == 'b') 
+{
+    printf("Correct!\n");
+    score++;
+} 
+else 
+{
+    printf("Incorrect. The correct answer is b.\n");
+}
+
+
+// Question 8
+printf("Q8: What is the correct way to access the 5th element of an array named 'arr'?\n");
+printf("a) arr[5]\n");
+printf("b) arr[4]\n");
+printf("c) arr(5)\n");
+printf("d) arr(4)\n");
+char answer8;
+scanf(" %c", &answer8);
+if (answer8 == 'b')
+ {
+    printf("Correct!\n");
+    score++;
+} 
+else 
+{
+    printf("Incorrect. The correct answer is b.\n");
+}
+
+
+// Question 9
+printf("Q9: Who created the C programming language? ?\n");
+printf("a) Steve Jobs\n");
+printf("b) Bill Gates\n");
+printf("c) Dennis Ritchie\n");
+printf("d) Tim Berners-Lee\n");
+char answer9;
+scanf(" %c", &answer9);
+if (answer9 == 'c')
+ {
+    printf("Correct!\n");
+    score++;
+} else 
+{
+    printf("Incorrect. The correct answer is c.\n");
+}
+
+
+// Question 10
+printf("Q10: Which of the following is NOT a data type in C?\n");
+printf("a) int\n");
+printf("b) float\n");
+printf("c) boolean\n");
+printf("d) char\n");
+char answer10;
+scanf(" %c", &answer10);
+if (answer10 == 'c') 
+{
+    printf("Correct!\n");
+    score++;
+} else
+ {
+    printf("Incorrect. The correct answer is c.\n");
+}
+ printf("You have completed the quiz! You got %d out of 10 questions correct.\n", score);
+    
+    if(score <= 5)
+     {
+        printf("Try again next time!\n");
+    }
+    else 
+    {
+        printf("Congratulations, you are a genius!\n");
+    }
+
+return 0;
+}
